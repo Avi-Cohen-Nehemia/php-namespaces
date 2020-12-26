@@ -2,6 +2,9 @@
 
 namespace App\Stuff\Things;
 
+//Create a class Potato in the App\Stuff\Things namespace. It should have a water() and hasGrown() method.
+// hasGrown() should return false until the Potato has been watered five or more times.
+
 class Potato
 {
     private $amountOfWater = 0;

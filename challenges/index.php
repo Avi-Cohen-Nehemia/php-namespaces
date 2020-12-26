@@ -33,3 +33,18 @@ dump($potato->hasGrown()); // true
 $potato->water(); // 6 water
 $potato->water(); // 7 water
 dump($potato->hasGrown()); // true
+
+// exercise 3
+echo "\nQuestion 3:\n";
+
+use App\Library\Book;
+
+$book = new Book("Zero: The Biography of a Dangerous Idea", 256);
+
+// read 12 pages
+$book->read(12);
+dump($book->currentPage()); // 13 - start on page 1
+
+// read another 25 pages
+$book->read(25);
+dump($book->currentPage()); // 38
