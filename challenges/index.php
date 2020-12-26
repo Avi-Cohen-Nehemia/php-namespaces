@@ -12,6 +12,7 @@ $sayHi = new Hello();
 dump($sayHi->hello("Orb")); // "Hello Orb"
 dump($sayHi->hello("Horse")); // "Hello Horse"
 
+
 // exercise 2
 echo "\nQuestion 2:\n";
 
@@ -34,6 +35,7 @@ $potato->water(); // 6 water
 $potato->water(); // 7 water
 dump($potato->hasGrown()); // true
 
+
 // exercise 3
 echo "\nQuestion 3:\n";
 
@@ -48,6 +50,7 @@ dump($book->currentPage()); // 13 - start on page 1
 // read another 25 pages
 $book->read(25);
 dump($book->currentPage()); // 38
+
 
 //exercise 4
 echo "\nQuestion 4:\n";
@@ -64,3 +67,19 @@ dump($item->price()); // 3.5
 
 // get the price as a formatted string
 dump($item->priceFormatted()); // "£3.50"
+
+
+// exercise 5
+echo "\nQuestion 5:\n";
+
+use App\Cooking\Ingredient;
+
+// ingredients take a name, followed by an array of dietary information
+$flour = new Ingredient("Flour", ["gluten"]);
+$eggs = new Ingredient("Eggs", ["animal produce"]);
+
+dump($flour->name()); // "Flour"
+dump($flour->vegan()); // true
+
+dump($eggs->name()); // "Eggs"
+dump($eggs->vegan()); // false
