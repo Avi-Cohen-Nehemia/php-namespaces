@@ -10,10 +10,11 @@ require_once 'Post.php';
 require_once 'Slack/Post.php';
 
 // use is another way for us to import a file and that would work if we gave that file a namespace
-use Slack\Post;
+// we can give the class an alias with the keyword as
+use Slack\Post as SPost;
 
 $post = new Post('Wombats', 'They are amazing');
-$slackPost = new Slack\Post();
+$slackPost = new SPost();
 
 var_dump($post);
 var_dump($slackPost);
